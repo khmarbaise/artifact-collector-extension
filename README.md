@@ -1,8 +1,8 @@
 # Artifact Collector Extension
 
 [![Apache License, Version 2.0, January 2004](https://img.shields.io/github/license/khmarbaise/artifact-collector-extension.svg?label=License)](http://www.apache.org/licenses/)
-[![Maven Central](https://img.shields.io/maven-central/v/com.soebes.extensions/artifact-collector-extension.svg?label=Maven%20Central)](http://search.maven.org/#search%7Cga%7C1%7Cmaven-buildtime-profiler)
-[![Build Status](https://travis-ci.org/mojohaus/sql-maven-plugin.svg?branch=master)](https://travis-ci.org/khmarbaise/artifact-collector-extension)
+[![Maven Central](https://img.shields.io/maven-central/v/com.soebes.extensions/artifact-collector-extension.svg?label=Maven%20Central)](http://search.maven.org/#search%7Cga%7C1%7Cartifact-collector-extension)
+[![Build Status](https://travis-ci.org/khmarbaise/artifact-collector-extension.svg?branch=master)](https://travis-ci.org/khmarbaise/artifact-collector-extension)
 
 If you like to use this extensions you need to put the resulting jar
 file of this project into the `${M2_HOME}/lib/ext` directory.
