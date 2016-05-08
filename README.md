@@ -28,7 +28,7 @@ You can also use it with Maven 3.1.1+ via defining it via command line:
 mvn =-Dmaven.ext.class.path=artifact-collector-extension-0.1.0.jar
 ```
 
-An example output looks like this:
+An example output can look like this:
 
 ```
 [INFO] ------------------------------------------------------------------------
