@@ -4,6 +4,9 @@
 [![Maven Central](https://img.shields.io/maven-central/v/com.soebes.extensions/artifact-collector-extension.svg?label=Maven%20Central)](http://search.maven.org/#search%7Cga%7C1%7Cartifact-collector-extension)
 [![Build Status](https://travis-ci.org/khmarbaise/artifact-collector-extension.svg?branch=master)](https://travis-ci.org/khmarbaise/artifact-collector-extension)
 
+Currently this extensions needs Maven 3.1.1+. If you need it for Maven 3.0.X please create an issue
+here on GitHub.
+
 If you like to use this extensions you need to put the resulting jar
 file of this project into the `${M2_HOME}/lib/ext` directory.
 
