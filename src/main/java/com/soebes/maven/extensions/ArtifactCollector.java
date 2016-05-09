@@ -11,7 +11,6 @@ import org.apache.maven.eventspy.AbstractEventSpy;
 import org.apache.maven.execution.MavenExecutionResult;
 import org.eclipse.aether.RepositoryEvent;
 import org.eclipse.aether.RepositoryEvent.EventType;
-import org.eclipse.aether.artifact.Artifact;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -77,30 +76,13 @@ public class ArtifactCollector
         LOGGER.debug( "done." );
     }
 
-    private String getGAVFromArtifact( Artifact artifact)
-    {
-        StringBuilder sb = new StringBuilder( artifact.getGroupId() );
-        sb.append( ":" );
-        sb.append( artifact.getArtifactId() );
-        sb.append( ":" );
-        sb.append( artifact.getVersion() );
-        sb.append( ":" );
-        sb.append( artifact.getExtension() );
-        if ( !artifact.getClassifier().isEmpty() )
-        {
-            sb.append( ":" );
-            sb.append( artifact.getClassifier() );
-        }
-        return sb.toString();
-    }
-
     private void repositoryEventHandler( org.eclipse.aether.RepositoryEvent repositoryEvent )
     {
         EventType type = repositoryEvent.getType();
         switch ( type )
         {
             case ARTIFACT_INSTALLED:
-                collectedArtifacts.add( getGAVFromArtifact( repositoryEvent.getArtifact() ) );
+                collectedArtifacts.add( ArtifactFormatter.getGAVFromArtifact( repositoryEvent.getArtifact() ) );
                 break;
 
             case ARTIFACT_DESCRIPTOR_INVALID:
