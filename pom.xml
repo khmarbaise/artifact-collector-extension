@@ -160,7 +160,7 @@
               <pomIncludes>
                 <pomInclude>*/pom.xml</pomInclude>
               </pomIncludes>
-              <streamLogs>true</streamLogs>
+              <streamLogs>false</streamLogs>
               <preBuildHookScript>setup</preBuildHookScript>
               <postBuildHookScript>verify</postBuildHookScript>
               <settingsFile>src/it/settings.xml</settingsFile>
